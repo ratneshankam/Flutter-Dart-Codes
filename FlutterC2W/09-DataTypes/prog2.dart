@@ -19,7 +19,8 @@ main() {
   double z = 23.2;
   print(z);
   print(z.runtimeType);
-  z = 20;                 // Looks like as a int but store as a double value
+  
+  z = 20;                 // Looks like -> int but store as a double value [20.0]
   print(z);
   print(z.runtimeType);
   print("------------------------------------------------------------------------------");

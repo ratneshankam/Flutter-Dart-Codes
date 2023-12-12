@@ -28,4 +28,8 @@ void main() {
   // final int finx = 23;
   // finx =  3;             // error
   print(finx.runtimeType);
+
+  final runtimefinal;
+  runtimefinal = 34;      // This can be passed from user input also
+  print(runtimefinal);
 }

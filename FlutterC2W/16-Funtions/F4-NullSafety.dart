@@ -12,4 +12,4 @@ void main() {
   print(name);
 }
 
-// If language doesn't allowed us -> null value that means it follows null safety.
+// If language doesn't allowed us -> null value that means it follows null safety. [dart allowed it with ? i.e null safety handled specifically]

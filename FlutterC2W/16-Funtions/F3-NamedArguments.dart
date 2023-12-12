@@ -1,3 +1,4 @@
+import 'dart:io';
 
 void fun({String? name, double? sal}) {     // Only ? and required keyword works here.
 
@@ -5,8 +6,8 @@ void fun({String? name, double? sal}) {     // Only ? and required keyword works
   // Error: The parameter 'name' can't have a value of 'null' because of its type 'String', but the implicit default value is 'null'. --> Try adding either an explicit non-'null' default value or the 'required' modifier.
   // Error: The parameter 'sal' can't have a value of 'null' because of its type 'double', but the implicit default value is 'null'. --> Try adding either an explicit non-'null' default value or the 'required' modifier.
 
-  // stdout.writeln("Hi, " + name);                    // Error: A value of type 'String?' can't be assigned to a variable of type 'String' because 'String?' is nullable and 'String' isn't.
-
+  // stdout.writeln("Hi, " + name!);                    // Error: A value of type 'String?' can't be assigned to a variable of type 'String' because 'String?' is nullable and 'String' isn't.
+  // [But if we add '!' at last we actually tell funtion that value is non-nullable]
   print(name);
   print(sal);
 
